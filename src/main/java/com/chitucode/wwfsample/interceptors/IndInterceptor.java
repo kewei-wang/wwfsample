@@ -12,16 +12,17 @@ public class IndInterceptor implements WWFInterceptor {
     @Override
     public ActionResult before(BeatContext beatContext) {
         System.out.println("before 11111");
-        return null;
+        //ActionResult.NULL 实际上就是null
+        return ActionResult.NULL;
     }
 
     @Override
     public ActionResult after(BeatContext beatContext, ActionResult actionResult) {
-        return null;
+        return ActionResult.NULL;
     }
 
     @Override
     public ActionResult complete(BeatContext beatContext, ActionResult actionResult) {
-        return null;
+        return ActionResult.NULL;
     }
 }
